@@ -8,6 +8,11 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Abel', sans-serif;
+    margin-bottom: 0px;
+}
+dl, ol, ul
+{
+    margin-bottom: 0px !important;
 }
 html, body 
 {
@@ -15,23 +20,17 @@ html, body
     height: 100%;   
     background-color: white;
 }
-.overlay
-{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(128, 0, 128, 0.6);
-}
-h1{font-size: 60px; line-height: 65px;}
-h2{font-size: 50px; line-height: 55px;}
-h3{font-size: 40px; line-height: 45px;}
-h4{font-size: 30px; line-height: 35px;}
-p{font-size: 22px; line-height: 27px;}
+h1{font-size: 30px; line-height: 40px;}
+h2{font-size: 33px; line-height: 30px;}
+h3{font-size: 22px; line-height: 20px;}
+h4{font-size: 12px; line-height: 12px;}
+p{font-size: 10px; line-height: 10px;}
 
 /****Final Resets****/
 
 .conteiner
 {
+    max-width: 500px;
     width: 100;
     margin: 0 auto;
 }
@@ -64,6 +63,7 @@ header nav ul li a
 {
     font-size: 30px;
     padding: 10px;
+    color: white;
 }
 /******Menu de topo*****/
 
@@ -71,6 +71,7 @@ header nav ul li a
 {
     position: fixed;
     bottom: 0px;
+    max-width: 500px;
     width: 100%;
     background-color: white;
 }
@@ -96,5 +97,6 @@ header nav ul li a
 {
     font-size: 30px;
     padding: 10px;
+    color: white;
 }
 /******Menu de base*****/

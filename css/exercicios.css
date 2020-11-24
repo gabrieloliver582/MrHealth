@@ -1,0 +1,32 @@
+.itens-exercicio
+{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: aliceblue;
+}
+.itens-exercicio img
+{
+    width: 30%;
+}
+.itens-exercicio .bloco-text
+{
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%
+}
+.itens-exercicio .bloco-text > div
+{
+    width: 85%
+}
+.itens-exercicio .bloco-text ul
+{
+    width: 15%
+    vertical-align: middle;
+}
+.pg-exercicio > .progress
+{
+    height: 15px;
+    margin: 10px;
+}
