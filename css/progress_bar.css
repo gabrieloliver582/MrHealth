@@ -1,0 +1,12 @@
+.barra-de-progresso
+{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(156, 156, 156);
+}
+.barra-de-progresso #bar 
+{
+    background-color: blue;
+    height: 15px;
+    width: 0%;
+}
