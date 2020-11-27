@@ -1,12 +1,12 @@
 <?php
   $server = "localhost";
   $user = "root";
-  $password = "root";
-  $database = "proa";
+  $password = "";
+  $database = "db_mr_health";
 
-  $conn = mysqli_connect($server, $user, $password, $database);
+  $conect = mysqli_connect($server, $user, $password, $database);
   
-  if(!$conn){
+  if(!$conect){
     die("Conexão falhou: " . mysqli_connect_error());
   }
 ?>
