@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beber Água</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="4000">
+        <div class="toast-header" >
+          <img src="..." class="rounded mr-2" alt="Mr.Health">
+          <strong class="mr-auto">Mr. Health</strong>
+          <small class="text-muted">Agora</small>
+          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+           Olá, bora beber água.
+        </div>
+    </div>
+    <section id="circleBar">
+      <h2>Quanto de água você bebeu hoje?</h2>  
+      
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3">
+                  <div class="round" data-value="0.87" data-size="200" data-thickness="12">
+                      <strong></strong>
+                      <span><i class="fa fa-html5"></i>
+                        HTML SKILLS
+                      </span>
+                  </div>
+              </div>
+          </div>
+      </div>
+     <button class="btn" onclick="Circlle('.round');">Refresh</button>
+    </section>
+    <style>
+        #circleBar{
+    margin-top: 180px;
+    text-align: center;
+    font-family: tahoma;
+}
+
+#circleBar .round{
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#circleBar .round strong{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50%;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #212121;
+    font-weight: 100;
+}
+
+#circleBar span{
+    display: block;
+    color: #999;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+#circleBar span i{
+    color: #ff5c5c;
+    font-size: 22px;
+    margin-right: 17px;
+}
+
+section button:hover{
+    background-color: #ff5c5c;
+}
+    </style>
+
+    <script>
+        function Circlle(el){
+    $(el).circleProgress({fill: {color: '#ff5c5c'}})
+    .on('circle-animation-progress', function(event, 
+    progress, stepValue){
+        $(this).find('strong').text(String(stepValue.toFixed(2)) + '%'
+        );
+    });
+};
+
+Circlle('.round');
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
